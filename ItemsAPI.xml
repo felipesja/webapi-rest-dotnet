@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ItemsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Get">
+            <summary>
+            Recupera Lista de Itens        
+            </summary>       
+            <returns>Lista de Itens</returns>
+        </member>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Get(System.Int32)">
+            <summary>
+            Recupera um item específico
+            </summary>       
+            <param name="id">Id do Item</param>
+            <returns>Retorna o item</returns>
+        </member>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Get(System.Int32,System.Int32)">
+            <summary>
+            Recupera um item específico
+            </summary>       
+            <param name="id">Id do Item</param>
+            <returns>Retorna o item</returns>
+        </member>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Post(ItemsAPI.Controllers.Item)">
+            <summary>
+            Insere um item
+            </summary>       
+            <param name="item">Id do Item</param>
+            <returns>Retorna o id do item</returns>
+        </member>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Post(System.Collections.Generic.List{ItemsAPI.Controllers.Item})">
+            <summary>
+            Insere uma lista de itens
+            </summary>       
+            <param name="item">Id do Item</param>
+            <returns>Retorna o id do item</returns>
+        </member>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Put(System.Int32,ItemsAPI.Controllers.Item)">
+            <summary>
+            Atualiza um item
+            </summary>       
+            <param name="item">Id do Item</param>
+            <returns>Retorna o id do item</returns>
+        </member>
+        <member name="M:ItemsAPI.Controllers.ItemsController.Delete(System.Int32)">
+            <summary>
+            Remove um item
+            </summary>       
+            <param name="item">Id do Item</param>
+            <returns>Retorna o id do item</returns>
+        </member>
+    </members>
+</doc>
