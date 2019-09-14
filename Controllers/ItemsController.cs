@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using ItemsAPI.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemsAPI.Controllers {
@@ -51,7 +52,12 @@ namespace ItemsAPI.Controllers {
         public int Post([FromBody] Item item) {
             items.Add(item);
             int id = items.Count() - 1;
-            return id;
+
+            using (var contexto = new ItemContext()) {
+                contexto.Item.Add(item);
+                contexto.SaveChanges();
+            }
+                return id;
         }
 
         /// <summary>
