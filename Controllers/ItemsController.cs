@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using ItemsAPI.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemsAPI.Controllers {
